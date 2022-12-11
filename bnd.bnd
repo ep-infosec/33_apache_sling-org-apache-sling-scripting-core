@@ -1,0 +1,15 @@
+Import-Package:\
+  org.apache.felix.webconsole;resolution:=optional,\
+  *
+
+Conditional-Package:\
+  org.apache.felix.utils.json.*
+
+-exportcontents: ${packages;VERSIONED}
+
+-includeresource:\
+  @org.apache.sling.commons.osgi-*.jar!/org/apache/sling/commons/osgi/PropertiesUtil.*
+
+-removeheaders:\
+  Include-Resource,\
+  Private-Package
